@@ -41,40 +41,6 @@ public enum Role {
                     USER_CREATE,
                     USER_DELETE
             )
-    ),
-    WAITER(
-
-            Set.of(
-                    USER_READ,
-                    USER_UPDATE, // Decide if they need update/create/delete
-                    USER_CREATE,
-                    USER_DELETE
-                    // Add other specific permissions like VIEW_METAL_STOCK, UPDATE_METAL_PRODUCT etc.
-            )
-    ),
-    COOKER(
-            // TODO: IMPORTANT - Define the specific permissions for the WOODER role.
-            // Assign the correct Permission enum values here.
-            // Placeholder:
-            Set.of(
-                    USER_READ,
-                    USER_UPDATE,
-                    USER_CREATE,
-                    USER_DELETE
-                    // Add other specific permissions like VIEW_WOOD_STOCK, CREATE_WOOD_ORDER etc.
-            )
-    ),
-    BARMAN(
-            // TODO: IMPORTANT - Define the specific permissions for the SEWER role.
-            // Assign the correct Permission enum values here.
-            // Placeholder:
-            Set.of(
-                    USER_READ,
-                    USER_UPDATE,
-                    USER_CREATE,
-                    USER_DELETE
-                    // Add other specific permissions like VIEW_FABRIC_STOCK, UPDATE_SEWING_TASK etc.
-            )
     );
 
     private final Set<Permission> permissions;
