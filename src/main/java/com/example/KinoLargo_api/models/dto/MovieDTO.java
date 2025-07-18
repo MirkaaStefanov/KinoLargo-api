@@ -23,6 +23,8 @@ public class MovieDTO {
 
     private int durationMins;
 
+    private String description;
+
     private MovieType movieType;
 
     private GenreDTO genre;

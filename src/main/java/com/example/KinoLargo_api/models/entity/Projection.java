@@ -19,6 +19,7 @@ import lombok.ToString;
 import org.apache.catalina.LifecycleState;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -39,7 +40,7 @@ public class Projection {
     @Column(name = "id", updatable = false, nullable = false, columnDefinition = "BINARY(16)")
     private UUID id;
 
-    private Date date;
+    private LocalDateTime date;
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(

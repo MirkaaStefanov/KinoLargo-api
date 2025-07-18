@@ -39,6 +39,8 @@ public class Movie {
 
     private int durationMins;
 
+    private String description;
+
     @Enumerated(EnumType.STRING)
     private MovieType movieType;
 
